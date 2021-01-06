@@ -13,7 +13,7 @@ class Register extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'LoginFlutter',
+      title: 'InglesAPP',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: backgroundColor,
@@ -38,10 +38,10 @@ class BodyWidgetState extends State<BodyWidget> {
   TextEditingController _crtlEmail = TextEditingController();
   TextEditingController _crtlPassword = TextEditingController();
   TextEditingController _ctrlIp = TextEditingController();
-  final success = SnackBar(content: Text('Login succeded!'));
-  final error = SnackBar(content: Text('Wrong email or password!'));
-  final serverError = SnackBar(content: Text('Can\'t connect to the server!'));
-  final ipError = SnackBar(content: Text('You must insert an IP! Go to settings'));
+  final success = SnackBar(content: Text('Login realizado!'));
+  final error = SnackBar(content: Text('Email ou senha incorreta!'));
+  final serverError = SnackBar(content: Text('Não foi possível conectar ao servidor!'));
+  final ipError = SnackBar(content: Text('Você precisa inserir um IP nas configurações'));
 
   final _formKey = GlobalKey<FormState>();
 
@@ -98,7 +98,7 @@ class BodyWidgetState extends State<BodyWidget> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       Text(
-                        "RegistrationFlutter",
+                        "InglesAPP",
                         style: new TextStyle(
                             fontFamily: 'Mont',
                             fontSize: 20,
@@ -140,14 +140,14 @@ class BodyWidgetState extends State<BodyWidget> {
                             child: TextFormField(
                               validator: (value) {
                                 if (value.isEmpty) {
-                                  return 'Insert a name!';
+                                  return 'Insira um nome!';
                                 }
                               },
                               controller: _crtlName,
                               style:
                               TextStyle(fontSize: 20.0, color: accentColor),
                               decoration: new InputDecoration(
-                                  labelText: "Name",
+                                  labelText: "Nome",
                                   fillColor: accentColor,
                                   prefixIcon: const Icon(
                                     Icons.account_circle,
@@ -171,14 +171,14 @@ class BodyWidgetState extends State<BodyWidget> {
                             child: TextFormField(
                               validator: (value) {
                                 if (value.isEmpty) {
-                                  return 'Insert a surname!';
+                                  return 'Insira um nome de usuário!';
                                 }
                               },
                               controller: _crtlSurname,
                               style:
                               TextStyle(fontSize: 20.0, color: accentColor),
                               decoration: new InputDecoration(
-                                  labelText: "Surname",
+                                  labelText: "Nome de usuário",
                                   fillColor: accentColor,
                                   prefixIcon: const Icon(
                                     Icons.assignment_ind,
@@ -202,7 +202,7 @@ class BodyWidgetState extends State<BodyWidget> {
                             child: TextFormField(
                               validator: (value) {
                                 if (value.isEmpty) {
-                                  return 'Insert an email!';
+                                  return 'Insira um email!';
                                 }
                               },
                               controller: _crtlEmail,
@@ -233,7 +233,7 @@ class BodyWidgetState extends State<BodyWidget> {
                             child: TextFormField(
                               validator: (value) {
                                 if (value.isEmpty) {
-                                  return 'Insert a password!';
+                                  return 'Insira uma senha!';
                                 }
                               },
                               controller: _crtlPassword,
@@ -241,7 +241,7 @@ class BodyWidgetState extends State<BodyWidget> {
                               style:
                                   TextStyle(fontSize: 20.0, color: accentColor),
                               decoration: new InputDecoration(
-                                  labelText: "Password",
+                                  labelText: "Senha",
                                   fillColor: accentColor,
                                   prefixIcon: const Icon(
                                     Icons.lock,
@@ -267,7 +267,7 @@ class BodyWidgetState extends State<BodyWidget> {
                               height: 50.0,
                               child: RaisedButton(
                                   onPressed: () => doRegistration(),
-                                  child: const Text('SIGN UP',
+                                  child: const Text('REGISTRAR',
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                           color: Colors.white,
@@ -289,10 +289,10 @@ class BodyWidgetState extends State<BodyWidget> {
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) => Login())),
-                                child: Text("Already registered? Login!",
+                                child: Text("Já é registrado? Clique aqui!",
                                     textAlign: TextAlign.center,
                                     style: new TextStyle(
-                                      fontSize: 13,
+                                      fontSize: 20,
                                       color: accentColor,
                                       fontFamily: 'calibre',
                                       decoration: TextDecoration.underline,

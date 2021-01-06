@@ -24,7 +24,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         centerTitle: true,
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Colors.blue[800],
       ),
       body: Column (
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> {
                   gradient: LinearGradient(
                       begin: Alignment.centerRight,
                       end: Alignment.centerLeft,
-                      colors: [Colors.deepPurpleAccent,Colors.deepPurple]
+                      colors: [Colors.blue[500],Colors.blue[800]]
                   ),
                   borderRadius: BorderRadius.circular(30.0),
                 ),
@@ -75,7 +75,7 @@ class _HomePageState extends State<HomePage> {
                   gradient: LinearGradient(
                       begin: Alignment.centerRight,
                       end: Alignment.centerLeft,
-                      colors: [Colors.deepPurpleAccent,Colors.deepPurple]
+                      colors: [Colors.blue[500],Colors.blue[800]]
                   ),
                   borderRadius: BorderRadius.circular(30.0),
                 ),
@@ -100,7 +100,7 @@ class _HomePageState extends State<HomePage> {
                   gradient: LinearGradient(
                       begin: Alignment.centerRight,
                       end: Alignment.centerLeft,
-                      colors: [Colors.deepPurpleAccent,Colors.deepPurple]
+                      colors: [Colors.blue[500],Colors.blue[800]]
                   ),
                   borderRadius: BorderRadius.circular(30.0),
                 ),
@@ -121,8 +121,9 @@ class _HomePageState extends State<HomePage> {
         child: Icon(
             Icons.account_circle
         ),
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Colors.blue[500],
       ),
+      backgroundColor: Colors.blue[300],
     );
 
   }
@@ -139,7 +140,7 @@ class Aulas extends StatelessWidget{
           ),
         ),
         centerTitle: true,
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Colors.blue[800],
       ),
       body: Column (
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -170,7 +171,7 @@ class Aulas extends StatelessWidget{
                   gradient: LinearGradient(
                       begin: Alignment.centerRight,
                       end: Alignment.centerLeft,
-                      colors: [Colors.deepPurpleAccent,Colors.deepPurple]
+                      colors: [Colors.blue[500],Colors.blue[800]]
                   ),
                   borderRadius: BorderRadius.circular(30.0),
                 ),
@@ -195,7 +196,7 @@ class Aulas extends StatelessWidget{
                   gradient: LinearGradient(
                       begin: Alignment.centerRight,
                       end: Alignment.centerLeft,
-                      colors: [Colors.deepPurpleAccent,Colors.deepPurple]
+                      colors: [Colors.blue[500],Colors.blue[800]]
                   ),
                   borderRadius: BorderRadius.circular(30.0),
                 ),
@@ -220,7 +221,7 @@ class Aulas extends StatelessWidget{
                   gradient: LinearGradient(
                       begin: Alignment.centerRight,
                       end: Alignment.centerLeft,
-                      colors: [Colors.deepPurpleAccent,Colors.deepPurple]
+                      colors: [Colors.blue[500],Colors.blue[800]]
                   ),
                   borderRadius: BorderRadius.circular(30.0),
                 ),
@@ -245,7 +246,7 @@ class Aulas extends StatelessWidget{
                   gradient: LinearGradient(
                       begin: Alignment.centerRight,
                       end: Alignment.centerLeft,
-                      colors: [Colors.deepPurpleAccent,Colors.deepPurple]
+                      colors: [Colors.blue[500],Colors.blue[800]]
                   ),
                   borderRadius: BorderRadius.circular(30.0),
                 ),
@@ -270,7 +271,7 @@ class Aulas extends StatelessWidget{
                   gradient: LinearGradient(
                       begin: Alignment.centerRight,
                       end: Alignment.centerLeft,
-                      colors: [Colors.deepPurpleAccent,Colors.deepPurple]
+                      colors: [Colors.blue[500],Colors.blue[800]]
                   ),
                   borderRadius: BorderRadius.circular(30.0),
                 ),
@@ -295,7 +296,7 @@ class Aulas extends StatelessWidget{
                   gradient: LinearGradient(
                       begin: Alignment.centerRight,
                       end: Alignment.centerLeft,
-                      colors: [Colors.deepPurpleAccent,Colors.deepPurple]
+                      colors: [Colors.blue[500],Colors.blue[800]]
                   ),
                   borderRadius: BorderRadius.circular(30.0),
                 ),
@@ -316,8 +317,9 @@ class Aulas extends StatelessWidget{
         child: Icon(
             Icons.account_circle
         ),
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Colors.blue[500],
       ),
+      backgroundColor: Colors.blue[300],
     );
 
   }
@@ -350,7 +352,7 @@ class Profile extends StatelessWidget {
                   gradient: LinearGradient(
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
-                      colors: [Colors.deepPurple, Colors.deepPurpleAccent]
+                      colors: [Colors.blue[500],Colors.blue[800]]
                   )
               ),
               child: Container(
@@ -430,7 +432,7 @@ class Profile extends StatelessWidget {
                     gradient: LinearGradient(
                         begin: Alignment.centerRight,
                         end: Alignment.centerLeft,
-                        colors: [Colors.deepPurpleAccent,Colors.deepPurple]
+                        colors: [Colors.blue[500],Colors.blue[800]]
                     ),
                     borderRadius: BorderRadius.circular(30.0),
                   ),
@@ -462,7 +464,7 @@ class Profile extends StatelessWidget {
                     gradient: LinearGradient(
                         begin: Alignment.centerRight,
                         end: Alignment.centerLeft,
-                        colors: [Colors.deepPurpleAccent,Colors.deepPurple]
+                        colors: [Colors.blue[500],Colors.blue[800]]
                     ),
                     borderRadius: BorderRadius.circular(30.0),
                   ),
@@ -510,6 +512,7 @@ class Profile extends StatelessWidget {
           ),
         ],
       ),
+      backgroundColor: Colors.blue[300],
     );
   }
 
@@ -529,7 +532,7 @@ class Editar extends StatelessWidget{
           ),
         ),
         centerTitle: true,
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Colors.blue[800],
       ),
       body: Column (
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -560,7 +563,7 @@ class Editar extends StatelessWidget{
                   gradient: LinearGradient(
                       begin: Alignment.centerRight,
                       end: Alignment.centerLeft,
-                      colors: [Colors.deepPurpleAccent,Colors.deepPurple]
+                      colors: [Colors.blue[500],Colors.blue[800]]
                   ),
                   borderRadius: BorderRadius.circular(30.0),
                 ),
@@ -585,7 +588,7 @@ class Editar extends StatelessWidget{
                   gradient: LinearGradient(
                       begin: Alignment.centerRight,
                       end: Alignment.centerLeft,
-                      colors: [Colors.deepPurpleAccent,Colors.deepPurple]
+                      colors: [Colors.blue[500],Colors.blue[800]]
                   ),
                   borderRadius: BorderRadius.circular(30.0),
                 ),
@@ -610,7 +613,7 @@ class Editar extends StatelessWidget{
                   gradient: LinearGradient(
                       begin: Alignment.centerRight,
                       end: Alignment.centerLeft,
-                      colors: [Colors.deepPurpleAccent,Colors.deepPurple]
+                      colors: [Colors.blue[500],Colors.blue[800]]
                   ),
                   borderRadius: BorderRadius.circular(30.0),
                 ),
@@ -635,7 +638,7 @@ class Editar extends StatelessWidget{
                   gradient: LinearGradient(
                       begin: Alignment.centerRight,
                       end: Alignment.centerLeft,
-                      colors: [Colors.deepPurpleAccent,Colors.deepPurple]
+                      colors: [Colors.blue[500],Colors.blue[800]]
                   ),
                   borderRadius: BorderRadius.circular(30.0),
                 ),
@@ -660,7 +663,7 @@ class Editar extends StatelessWidget{
                   gradient: LinearGradient(
                       begin: Alignment.centerRight,
                       end: Alignment.centerLeft,
-                      colors: [Colors.deepPurpleAccent,Colors.deepPurple]
+                      colors: [Colors.blue[500],Colors.blue[800]]
                   ),
                   borderRadius: BorderRadius.circular(30.0),
                 ),
@@ -685,7 +688,7 @@ class Editar extends StatelessWidget{
                   gradient: LinearGradient(
                       begin: Alignment.centerRight,
                       end: Alignment.centerLeft,
-                      colors: [Colors.deepPurpleAccent,Colors.deepPurple]
+                      colors: [Colors.blue[500],Colors.blue[800]]
                   ),
                   borderRadius: BorderRadius.circular(30.0),
                 ),
@@ -706,8 +709,9 @@ class Editar extends StatelessWidget{
         child: Icon(
             Icons.account_circle
         ),
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Colors.blue[500],
       ),
+      backgroundColor: Colors.blue[300],
     );
 
   }

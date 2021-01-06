@@ -6,7 +6,7 @@ import './../colors/colors.dart';
 import './../api_provider.dart';
 import './../pages/home.dart';
 import '../pages/register.dart';
-import 'package:LoginFlutter/pages/settings.dart';
+import 'package:InglesAPP/pages/settings.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Login extends StatelessWidget {
@@ -42,10 +42,10 @@ class BodyWidgetState extends State<BodyWidget> {
 
   final _formKey = GlobalKey<FormState>();
 
-  final success = SnackBar(content: Text('Login succeded!'));
-  final error = SnackBar(content: Text('Wrong email or password!'));
-  final serverError = SnackBar(content: Text('Can\'t connect to the server!'));
-  final ipError = SnackBar(content: Text('You must insert an IP! Go to settings'));
+  final success = SnackBar(content: Text('Login realizado!'));
+  final error = SnackBar(content: Text('Senha ou email incorreto!'));
+  final serverError = SnackBar(content: Text('Não foi possível conectar ao servidor!'));
+  final ipError = SnackBar(content: Text('Você precisa inserir um IP nas configurações'));
 
   ApiProvider apiProvider = ApiProvider();
 
@@ -104,7 +104,7 @@ class BodyWidgetState extends State<BodyWidget> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       Text(
-                        "LoginFlutter",
+                        "InglêsAPP",
                         style: new TextStyle(
                             fontFamily: 'Mont',
                             fontSize: 20,
@@ -164,7 +164,7 @@ class BodyWidgetState extends State<BodyWidget> {
                             child: TextFormField(
                               validator: (value) {
                                 if (value.isEmpty) {
-                                  return 'Insert an Email!';
+                                  return 'Insira um e-mail!';
                                 }
                               },
                               controller: _crtlEmail,
@@ -196,7 +196,7 @@ class BodyWidgetState extends State<BodyWidget> {
                             child: TextFormField(
                               validator: (value) {
                                 if (value.isEmpty) {
-                                  return 'Insert a Password!';
+                                  return 'Insira uma senha!';
                                 }
                               },
                               controller: _crtlPassword,
@@ -204,7 +204,7 @@ class BodyWidgetState extends State<BodyWidget> {
                               style:
                                   TextStyle(fontSize: 20.0, color: accentColor),
                               decoration: new InputDecoration(
-                                  labelText: "Password",
+                                  labelText: "Senha",
                                   fillColor: accentColor,
                                   prefixIcon: const Icon(
                                     Icons.lock,
@@ -250,10 +250,10 @@ class BodyWidgetState extends State<BodyWidget> {
                               padding: const EdgeInsets.only(top: 16.0),
                               child: new FlatButton(
                                 onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => Register())),
-                                child: Text("Are you not register? Sign up",
+                                child: Text("Novo por aqui? Clique aqui!",
                                     textAlign: TextAlign.center,
                                     style: new TextStyle(
-                                      fontSize: 13,
+                                      fontSize: 20,
                                       color: accentColor,
                                       fontFamily: 'calibre',
                                       decoration: TextDecoration.underline,

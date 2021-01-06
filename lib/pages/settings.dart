@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:LoginFlutter/colors/colors.dart';
+import 'package:InglesAPP/colors/colors.dart';
 import './../api_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'login.dart';
@@ -12,7 +12,7 @@ class Settings extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'LoginFlutter',
+      title: 'InglesAPP',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: backgroundColor,
@@ -38,9 +38,9 @@ class _WidgetCreationState extends State<WidgetCreation> {
   TextEditingController _ctrlIp = TextEditingController();
 
   ApiProvider apiProvider = ApiProvider();
-  final success = SnackBar(content: Text('Login riuscito!'));
-  final error = SnackBar(content: Text('Credenziali errate!'));
-  final serverError = SnackBar(content: Text('Errore nel server!'));
+  final success = SnackBar(content: Text('Login realizado!'));
+  final error = SnackBar(content: Text('Dados incorretos!'));
+  final serverError = SnackBar(content: Text('Erro no servidor'));
 
 
 
@@ -94,7 +94,7 @@ class _WidgetCreationState extends State<WidgetCreation> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: <Widget>[
                           Text(
-                            "Settings",
+                            "Configurar",
                             style: new TextStyle(
                                 fontFamily: 'Mont',
                                 fontSize: 20,
@@ -114,7 +114,7 @@ class _WidgetCreationState extends State<WidgetCreation> {
 
                                   validator: (value) {
                                     if (value.isEmpty) {
-                                      return 'Insert an IP!';
+                                      return 'Insira um IP!';
                                     }
                                   },
 
@@ -155,7 +155,7 @@ class _WidgetCreationState extends State<WidgetCreation> {
                                         _saveData();
 
                                       },
-                                      child: const Text('SAVE IP',
+                                      child: const Text('SALVAR IP',
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
@@ -170,7 +170,7 @@ class _WidgetCreationState extends State<WidgetCreation> {
                               ),
                             ),
                           ),
-                          new Center(child: new Text("Creators:\n\nAlessio Di Pasquale (@alessiodipa10)\n Samuele Simone (@samuelesimone)"))
+                          new Center(child: new Text("Criadores:\n\nAlyson Camargo \nGustavo Nascimento \nPedro Reggi"))
                         ],
                       ),
                     ),
