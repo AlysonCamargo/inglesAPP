@@ -12,7 +12,7 @@ COMO EXECUTAR O INGLES APP:
 
 
 
-Criador por:
+Criado por:
 
 Alyson Camargo BP3002241
 Gustavo Nascimento BP3001687
