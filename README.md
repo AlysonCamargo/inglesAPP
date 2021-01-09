@@ -10,6 +10,12 @@ COMO EXECUTAR O INGLES APP:
 
 5) Faça o login. 
 
+Lista de itens com o conteúdo da aplicação:
+1) Informações do usuário em "Perfil";
+2) Aulas criadas pelo professor em "Aulas criadas";
+
+
+
 
 
 Criado por:
