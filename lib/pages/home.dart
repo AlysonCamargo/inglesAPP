@@ -862,7 +862,7 @@ class DataTableDemoState extends State<DataTableDemo> {
               label: Text('ASSUNTO'),
             ),
             DataColumn(
-              label: Text('MATÉRIA'),
+              label: Text('CONTEUDO'),
             ),
             // Lets add one more column to show a delete button
             DataColumn(
@@ -966,7 +966,7 @@ class DataTableDemoState extends State<DataTableDemo> {
               child: TextField(
                 controller: _lastNameController,
                 decoration: InputDecoration.collapsed(
-                  hintText: 'Matéria',
+                  hintText: 'Conteúdo',
                 ),
               ),
             ),
@@ -997,6 +997,8 @@ class DataTableDemoState extends State<DataTableDemo> {
               child: _dataBody(),
             ),
           ],
+
+
         ),
       ),
       floatingActionButton: FloatingActionButton(
@@ -1004,7 +1006,10 @@ class DataTableDemoState extends State<DataTableDemo> {
           _addEmployee();
         },
         child: Icon(Icons.add),
-      ),
+      )
     );
+
   }
+
+
 }
